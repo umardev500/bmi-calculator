@@ -37,7 +37,7 @@ export const Home = () => {
 
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="dark-content" backgroundColor={'transparent'} />
       <View className="p-6">
         <View>
           <Text className="text-4xl font-semibold text-center">

@@ -16,10 +16,7 @@ export const Home = () => {
     }
 
     const heightInMeters = parseFloat(height) / 100;
-    const bmiValue = (
-      parseFloat(weight) /
-      (heightInMeters * heightInMeters)
-    ).toFixed(2);
+    const bmiValue = (parseFloat(weight) / (heightInMeters * heightInMeters)).toFixed(2);
     setBmi(parseFloat(bmiValue));
 
     let bmiCategory = '';
@@ -40,9 +37,7 @@ export const Home = () => {
       <StatusBar barStyle="dark-content" backgroundColor={'transparent'} />
       <View className="p-6">
         <View>
-          <Text className="text-4xl font-semibold text-center">
-            BMI Calculator
-          </Text>
+          <Text className="text-4xl font-semibold text-center">BMI Calculator</Text>
         </View>
 
         <View className="gap-4 mt-10">
@@ -62,12 +57,8 @@ export const Home = () => {
           />
         </View>
 
-        <TouchableOpacity
-          onPress={handleCalculate}
-          className="mt-6 bg-blue-500 px-4 py-3 rounded-lg">
-          <Text className="text-white text-lg text-center font-medium">
-            Calculate
-          </Text>
+        <TouchableOpacity onPress={handleCalculate} className="mt-6 bg-blue-500 px-4 py-3 rounded-lg">
+          <Text className="text-white text-lg text-center font-medium">Calculate</Text>
         </TouchableOpacity>
 
         {/* Result */}
